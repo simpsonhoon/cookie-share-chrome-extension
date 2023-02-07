@@ -1,0 +1,65 @@
+<html>
+<head>
+  <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script-->
+  <script src="lib/jquery-1.10.2.js"></script>
+  <script src="lib/underscore-min.js"></script>
+  <script src="cookie.js"></script>
+  <script src="lib/socket.io.js"></script>
+  <script src="popup.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+
+</style>
+</head>
+<body style="width: 400px">
+
+<div class="w3-bar w3-black">
+  <button class='w3-bar-item w3-button w3-margin-left w3-blue w3-margin-left tabbtn' id="SendTab">Send</button>
+  <button class="w3-bar-item w3-button tabbtn"  id="RecvTab">Receive</button>
+  <button class="w3-bar-item w3-button tabbtn"  id="IdTab">Register</button>
+</div>
+
+<div id="SendCookie" class="w3-container w3-display-container tabdiv">
+	<div class="w3-container"  style="margin-top:15px">
+		<img src="cookie2.png" style="width:30px; height:30px;"> Let`s send Cookie! 
+		<div class="w3-section">
+				<label>Receiver ID</label>
+				<input class="w3-input w3-border" type="text" id="receiver" value="" >
+		</div>
+		
+		<div class="w3-section w3-center">
+			<button class="w3-btn w3-teal" id="SendBtn">Send</button>
+		</div>			
+		
+	</div>
+</div>
+
+
+<div id="RecvCookie" class="w3-container w3-display-container tabdiv" style="display:none">
+	<div class="w3-container"  style="margin-top:15px">
+		<div class="w3-section">
+				<label>Your ID</label>
+				<input class="w3-input w3-border" type="text" id="userid" value="" readonly>
+		</div>
+		<p class="w3-small"> Press the Receive button after sender press the send button.</p>
+				
+		<div class="w3-section w3-center">
+			<button class="w3-btn w3-teal" id="RecvBtn">Receive</button>
+		</div>		
+	</div>
+</div>
+
+<div id="UserId" class="w3-container w3-display-container tabdiv" style="display:none">
+	<div class="w3-container"  style="margin-top:15px">
+		<div class="w3-section">
+				<label> Register your ID!</label>
+				<input class="w3-input w3-border" type="text" id="registerid" value="" >
+		</div>
+		<div class="w3-section w3-center">
+			<button class="w3-btn w3-teal" id="RegisterBtn">Register</button>
+		</div>		
+	</div>
+</div>
+</body>
+</html>

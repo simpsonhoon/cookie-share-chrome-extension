@@ -1,0 +1,22 @@
+
+const io = require("socket.io");
+const server = io.listen(3001);
+var ids=[];
+server.on("connection", (socket) => {
+  console.log('Client connected id=',socket.id);
+
+  socket.on('msg',function(data){
+    console.log(data);
+    //socket.emit('recMsg',  socket.id + ":" + data);
+    socket.emit('recMsg',socket.id);
+
+  });
+
+
+  socket.on("disconnect", () => {
+      console.log('Client gone id=',socket.id);
+  });
+});
+
+
+
