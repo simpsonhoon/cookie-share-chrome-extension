@@ -30,4 +30,4 @@
 
 
 ### Video
-https://www.youtube.com/watch?v=pdFSiiYvmv8&ab_channel=%EC%94%B8%EC%93%B4
+- https://www.youtube.com/watch?v=pdFSiiYvmv8&ab_channel=%EC%94%B8%EC%93%B4
