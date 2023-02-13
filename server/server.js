@@ -7,7 +7,7 @@ var dbconnection = new mysql ({
     host:'db.simpsonhoon.shop',
     port:3306,
     user:'simpsonhoon',
-    password:'ergudwp0897',
+    password:'********',
     database:'dbsimpsonhoon'
 	
 });
